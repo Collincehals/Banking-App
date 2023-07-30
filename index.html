@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/COLLINCE.png">
+    <title>Banking Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/css/output.css" rel="stylesheet">
+</head>
+<body class="bg-color-primary-dark">
+    <header>
+        <nav class=" bg-color-primary-light p-4 mx-0 flex flex-wrap justify-between">
+            <div class="text-white text-lg">
+                <a href="/">Colltech <span class="text-color-secondary">Website</span></a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex  items-center space-x-3" >
+                    <li><a href="#home" class="text-color-secondary text-lg mx-2 hover:text-color-white">Home</a></li>
+                    <li><a href="#about" class="text-color-secondary text-lg mx-2 hover:text-color-white">About</a></li>
+                    <li><a href="#services" class="text-color-secondary text-lg mx-2 hover:text-color-white">Services</a></li>
+                    <li><a href="#portfolio" class="text-color-secondary text-lg mx-2 hover:text-color-white">Portfolio</a></li>
+                    <li><a href="#reviews" class="text-color-secondary text-lg mx-2 hover:text-color-white">Reviews</a></li>
+                    <li><button class="btn">Subscribe</button></li>
+                </ul>   
+            </div>
+            <!---Mobile design-->
+            <div class="lg:hidden text-color-secondary z-50 items-center">
+               <i id="menu-bars" class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="hidden absolute h-[100vh] inset-0 bg-color-primary-dark">
+               <ul class="h-full grid place-items-center py-10">
+                    <li><a id="navLink" href="/" class="text-color-secondary text-lg mx-2 hover:text-color-white">Home</a></li>
+                    <li><a id="navLink" href="#about" class="text-color-secondary text-lg mx-2 hover:text-color-white">About</a></li>
+                    <li><a id="navLink" href="#services" class="text-color-secondary text-lg mx-2 hover:text-color-white">Services</a></li>
+                    <li><a id="navLink" href="#portfolio" class="text-color-secondary text-lg mx-2 hover:text-color-white">Portfolio</a></li>
+                    <li><a id="navLink" href="#reviews" class="text-color-secondary text-lg mx-2 hover:text-color-white">Reviews</a></li>
+                    <li><button id="navLink" class="btn">Subscribe</button></li> 
+               </ul> 
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container py-8">
+                <div class="flex flex-col items-center text-color-white md:flex-row">
+                    <div class="pr-10 mb-4 md:w-3/4">
+                        <h2 class="title">Awesome App for your Finances</h2>
+                        <p class="leading-relaxed py-4">Hello People! Welcome to this wonderful site where you can explore various opportunities wee have prepared for our clients. Enjoy and make the best out of it.</p>
+                        <button class="btn">Free Trial</button></li> 
+                    </div>
+                    <div class="md:w-3/4">
+                        <img class="rounded-lg" src="/static/code.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--Service Cards section-->
+        <section id="cards">
+            <div class="container py-10">
+                <h3 class="text-lg text-center text-white py-4 font-semibold">Our Future</h3>
+                <h1 class="title mb-10">Easy to manage all you finances in one app</h2>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 lg:gap-8 sm:gap-6 items-center text-color-white ">
+                    <div class="bg-color-primary-light rounded-md p-10 border-2 border-color-blob text-center hover:bg-color-gray hover:scale-105 ease-in duration-200 cursor-pointer">
+                        <div class="rounded-md mb-3 py-4 px-6 bg-color-secondary inline-block">
+                            <i class="fa-solid fa-calendar-days text-5xl text-white "></i>
+                        </div>
+                        <h3 class="font-normal text-xl text-white">Expense Tracking</h3>
+                        <p class="leading-relaxed py-4 -center">Hello People! Welcome to this wonderful site where you can explore various opportunities wee have prepared for our clients. Enjoy and make the best out of it.</p>
+                        <button class="btn">Free Trial</button></li> 
+                    </div>
+
+                    <div class="bg-color-primary-light rounded-md p-10 border-2 border-color-blob text-center hover:scale-105 hover:bg-color-gray ease-in duration-200 cursor-pointer">
+                        <div class="rounded-md mb-3 py-4 px-6 bg-color-secondary inline-block">
+                            <i class="fa-solid fa-calendar-days text-5xl text-white "></i>
+                        </div>
+                        <h3 class="font-normal text-xl text-white">Expense Tracking</h3>
+                        <p class="leading-relaxed py-4 -center">Hello People! Welcome to this wonderful site where you can explore various opportunities wee have prepared for our clients. Enjoy and make the best out of it.</p>
+                        <button class="btn">Free Trial</button></li> 
+                    </div>
+
+                    <div class="bg-color-primary-light rounded-md p-10 border-2 border-color-blob text-center hover:scale-105 hover:bg-color-gray ease-in duration-200 cursor-pointer">
+                        <div class="rounded-md mb-3 py-4 px-6 bg-color-secondary inline-block">
+                            <i class="fa-solid fa-calendar-days text-5xl text-white "></i>
+                        </div>
+                        <h3 class="font-normal text-xl text-white">Expense Tracking</h3>
+                        <p class="leading-relaxed py-4 -center">Hello People! Welcome to this wonderful site where you can explore various opportunities wee have prepared for our clients. Enjoy and make the best out of it.</p>
+                        <button class="btn">Free Trial</button></li> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    
+    
+    
+    <!--Javascript for menu bars-->
+    <script>
+        let menubars= document.querySelector('#menu-bars');
+        let menu= document.querySelector('#menu');
+        let navlink = document.querySelectorAll('#navLink');
+
+        menubars.onclick = () =>{
+            menu.classList.toggle('hidden');
+            menubars.classList.toggle('fa-xmark');
+        }
+
+        array.forEach(element => {
+            navlink.onclick= () => {
+                menu.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
