@@ -9,3 +9,15 @@
 .title {
     @apply py-3 text-3xl text-color-secondary text-center font-medium;
 }
+
+.user-pic.active-pic {
+    border: 2px solid #a5e808;
+}
+
+.user-text {
+    display: none;
+}
+
+.user-text.active-text {
+    display: block;
+}
