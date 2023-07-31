@@ -12,12 +12,59 @@
 
 .user-pic.active-pic {
     border: 2px solid #a5e808;
+    
+}
+
+.user-pic {
+    transition:all .2s ease;
 }
 
 .user-text {
     display: none;
 }
 
+@keyframes moveup {
+    0% {
+        margin-top:20px;
+        opacity:0;
+    }
+    50% {
+        margin-top:10px;
+        opacity:0.1;
+    }
+    100% {
+        margin-top:0px;
+        opacity:1;
+    }
+}
+
 .user-text.active-text {
     display: block;
+    animation: moveup 1s linear forwards;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.front {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width:10px;
+}
+::-webkit-scrollbar-track {
+    background-color: darkorange;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgb(1, 0, 42);
 }
