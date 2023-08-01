@@ -497,6 +497,10 @@
     </div>
 </section>
 
+<!--Back-to-top arrow-button-->
+<div class="hidden back-to-top bg-color-secondary rounded-full w-10 h-10 fixed text-center bottom-8 right-6 pt-2 hover:bg-color-blob ease-in duration-200">
+    <button><i class="fa-solid fa-chevron-up text-xl text-color-primary-dark hover:text-white "></i></button>
+</div>
 
 
 
@@ -514,6 +518,11 @@
         menubars.onclick = () =>{
             menu.classList.toggle('hidden');
             menubars.classList.toggle('fa-xmark');
+        }
+
+        window.onscroll = () => {
+            menu.classList.add('hidden');
+            menubars.classList.remove('fa-xmark');
         }
 
 
@@ -563,6 +572,20 @@
             card_3_front.classList.toggle('-rotate-y-180');
             card_3_back.classList.toggle('rotate-y-180')
         });
+
+        const button = document.querySelector('.back-to-top');
+        window.onscroll= () => {
+            if (window.scrollY > 200) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+            };
+       
+            document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
 
 
 
