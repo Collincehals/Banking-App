@@ -9,7 +9,7 @@
     <link href="css/output.css" rel="stylesheet">
 </head>
 <body class="bg-color-primary-light">
-    <header class="top-0 right-0 left-0 z-50 sticky">
+    <header class="top-0 right-0 left-0 z-50 sticky bg-color-primary-dark">
         <nav class="p-5 mx-0 flex flex-wrap justify-between items-center">
             <div class="text-white text-lg">
                 <a href="/">Colltech<span class="text-color-secondary ml-3">Loop App</span></a>
@@ -33,15 +33,15 @@
             </div>
             <div id="menu" class="hidden absolute h-[100vh] inset-0 bg-color-primary-dark">
                <ul class="h-full grid place-items-center py-10">
-                <li><a href="#home" class="text-color-secondary text-lg mx-2 hover:text-color-white">Home</a></li>
-                <li><a href="#about" class="text-color-secondary text-lg mx-2 hover:text-color-white">About</a></li>
-                <li><a href="#services" class="text-color-secondary text-lg mx-2 hover:text-color-white">Services</a></li>
-                <li><a href="#pricing" class="text-color-secondary text-lg mx-2 hover:text-color-white">Pricing</a></li>
-                <li><a href="#review" class="text-color-secondary text-lg mx-2 hover:text-color-white">Reviews</a></li>
-                <li><a href="#blog" class="text-color-secondary text-lg mx-2 hover:text-color-white">Blog</a></li>
-                <li><a href="#download" class="text-color-secondary text-lg mx-2 hover:text-color-white">Download App</a></li>
-                <li><a href="#contact" class="text-color-secondary text-lg mx-2 hover:text-color-white">Contact Us</a></li>
-                <li><button class="btn">Subscribe</button></li>
+                <li><a href="#home" id="navLink" class="text-color-secondary text-lg mx-2 hover:text-color-white">Home</a></li>
+                <li><a href="#about" id="navLink" class="text-color-secondary text-lg mx-2 hover:text-color-white">About</a></li>
+                <li><a href="#services" id="navLink" class="text-color-secondary text-lg mx-2 hover:text-color-white">Services</a></li>
+                <li><a href="#pricing" id="navLink" class="text-color-secondary text-lg mx-2 hover:text-color-white">Pricing</a></li>
+                <li><a href="#review" id="navLink" class="text-color-secondary text-lg mx-2 hover:text-color-white">Reviews</a></li>
+                <li><a href="#blog" id="navLink" class="text-color-secondary text-lg mx-2 hover:text-color-white">Blog</a></li>
+                <li><a href="#download" id="navLink" class="text-color-secondary text-lg mx-2 hover:text-color-white">Download App</a></li>
+                <li><a href="#contact" id="navLink" class="text-color-secondary text-lg mx-2 hover:text-color-white">Contact Us</a></li>
+                <li><button class="btn" id="navLink" >Subscribe</button></li>
                </ul> 
             </div>
         </nav>
@@ -50,13 +50,13 @@
     <main>
         <section id="home">
             <div class="container py-8 bg-color-primary-light">
-                <div class="absolute bg-color-blob left-10 top-60 rounded-full w-64 h-64 -z-0 blur-2xl opacity-30 overflow-hidden"></div>
+                <div class="absolute bg-color-blob left-16 top-56 rounded-full  w-64 h-64 -z-0 blur-2xl opacity-30 overflow-hidden"></div>
                 <div class="absolute bg-color-secondary bottom-10 right-20 rounded-full w-64 h-64 -z-0 blur-2xl opacity-30 overflow-hidden"></div>
                 <div class="flex flex-col items-center justify-center text-color-white md:flex-row">
                     <div class=" mb-4 md:w-1/2">
                         <h2 class="title">Awesome App for your Finances</h2>
                         <p class="leading-relaxed py-4">LOOP is a Smart APP that offers you a DIGITAL Wallet you can use to manage all your money centrally.</p>
-                        <button class="btn">Free Trial</button></li> 
+                        <button class="btn">Free Trial</button>
                     </div>
                     <div class="md:w-1/2 p-8">
                         <img class="rounded-3xl" src="/static/loop4(1).png">
@@ -515,21 +515,8 @@
             menu.classList.toggle('hidden');
             menubars.classList.toggle('fa-xmark');
         }
-        const navbar = document.querySelector('header');
-        window.onscroll = () =>{
-            if(window.scrollY>100) {
-                navbar.classList.toggle('bg-color-primary-dark');
-                navbar.classList.add('border-b');
-                navbar.classList.add('border-color-gray');
-            }
-            else {
-                navbar.classList.remove('bg-color-primary-dark');
-                navbar.classList.remove('border-b');
-                navbar.classList.remove('border-color-gray');
-            }
-            
-        }
-   
+
+
         navlink.forEach(link => {
             link.addEventListener('click', () =>{
                 menu.classList.toggle('hidden');
