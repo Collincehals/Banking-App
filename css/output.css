@@ -742,6 +742,10 @@ video {
   height: 5rem;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .h-64 {
   height: 16rem;
 }
@@ -780,6 +784,10 @@ video {
 
 .w-44 {
   width: 11rem;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .w-64 {
@@ -832,6 +840,10 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-4 {
@@ -1249,7 +1261,7 @@ video {
 }
 
 .user-pic.active-pic {
-  border: 2px solid #a5e808;
+  border: 2px solid hsl(31, 93%, 47%);
 }
 
 .user-pic {
