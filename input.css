@@ -16,7 +16,7 @@
 }
 
 .user-pic {
-    transition:all .2s ease;
+    transition:all .3s ease;
 }
 
 .user-text {
@@ -61,7 +61,7 @@
     width:10px;
 }
 ::-webkit-scrollbar-track {
-    background-color: darkorange;
+    background-color: rgb(255, 187, 0);
 }
 
 ::-webkit-scrollbar-thumb {
