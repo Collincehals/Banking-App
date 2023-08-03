@@ -11,7 +11,7 @@
 }
 
 .user-pic.active-pic {
-    border: 2px solid #a5e808;
+    border: 2px solid hsl(31, 93%, 47%);
     
 }
 
