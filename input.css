@@ -99,20 +99,60 @@ html {
 .swiper,
 .card1, 
 .card2,
-.card3 {
+.card3,
+.banner,
+#saving-title,
+#saving-paragraph,
+.card4, 
+.card5,
+.card6,
+.card7, 
+.card8,
+.card9,
+.footer
+ {
     opacity:0;
 }
+
+
 .first-paragraph.animate__animated, 
 .swiper.animate__animated, 
 .card1.animate__animated, 
 .card2.animate__animated,
-.card2.animate__animated {
+.card2.animate__animated,
+.banner.animate__animated,
+#saving-title.animate__animated,
+#saving-paragraph.animate__animated,
+.card4.animate__animated, 
+.card5.animate__animated,
+.card6.animate__animated,
+.card7.animate__animated, 
+.card8.animate__animated,
+.card9.animate__animated,
+.footer.animate__animated{
     opacity:1;
 }
 
+
+#saving-paragraph {
+    animation-delay: .20s;
+}
 .card2{
    animation-delay: .20s;
 }
 .card3{
     animation-delay: .4s;
  }
+ .card5 {
+    animation-delay: .20s;
+ }
+ .card6 {
+     animation-delay: .4s;
+  }
+
+  .card8 {
+    animation-delay: .20s;
+ }
+ .card9 {
+     animation-delay: .4s;
+  }

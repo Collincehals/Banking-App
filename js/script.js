@@ -127,13 +127,139 @@ $(document).ready(function() {
  offset
  );
  
- 
- $(".post-card").waypoint(function(){
-    $(".post-card").addClass(
-     "animate__animated animate__backInUp"
+ $(".banner").waypoint(function(){
+    $(".banner").addClass(
+     "animate__animated animate__bounceInDown"
     );
  }, 
  offset
  );
  
+ $("#saving-title").waypoint(function(){
+    $("#saving-title").addClass(
+     "animate__animated animate__fadeInRightBig"
+    );
+ }, 
+ offset
+ );
+
+ $("#saving-paragraph").waypoint(function(){
+    $("#saving-paragraph").addClass(
+     "animate__animated animate__backInUp"
+    );
+ }, 
+ offset
+ );
+
+ $(".card4").waypoint(function(){
+    $(".card4").addClass(
+     "animate__animated animate__fadeInLeft"
+    );
+ }, 
+ offset
+ );
+ 
+ $(".card5").waypoint(function(){
+    $(".card5").addClass(
+     "animate__animated animate__fadeInUp"
+    );
+ }, 
+ offset
+ );
+
+ $(".card6").waypoint(function(){
+    $(".card6").addClass(
+     "animate__animated animate__fadeInRight"
+    );
+ }, 
+ offset
+ );
+
+ $(".card7").waypoint(function(){
+    $(".card7").addClass(
+     "animate__animated animate__fadeInDownBig"
+    );
+ }, 
+ offset
+ );
+ 
+ $(".card8").waypoint(function(){
+    $(".card8").addClass(
+     "animate__animated animate__zoomIn"
+    );
+ }, 
+ offset
+ );
+
+ $(".card9").waypoint(function(){
+    $(".card9").addClass(
+     "animate__animated animate__fadeInUp"
+    );
+ }, 
+ offset
+ );
+
+ $(".card10").waypoint(function(){
+    $(".card10").addClass(
+     "animate__animated animate__fadeInLeft"
+    );
+ }, 
+ offset
+ );
+ 
+ $(".card11").waypoint(function(){
+    $(".card11").addClass(
+     "animate__animated animate__fadeInUp"
+    );
+ }, 
+ offset
+ );
+
+ $(".card12").waypoint(function(){
+    $(".card12").addClass(
+     "animate__animated animate__fadeInRight"
+    );
+ }, 
+ offset
+ );
+
+ $("#download").waypoint(function(){
+    $("#download").addClass(
+     "animate__animated animate__zoomIn"
+    );
+ }, 
+ offset
+ );
+
+ $(".footer").waypoint(function(){
+    $(".footer").addClass(
+     "animate__animated animate__zoomIn"
+    );
+ }, 
+ offset
+ );
+
+ $("#flex1").waypoint(function(){
+    $("#flex1").addClass(
+     "animate__animated animate__fadeInLeft"
+    );
+ }, 
+ offset
+ );
+
+ $("#flex2").waypoint(function(){
+    $("#flex2").addClass(
+     "animate__animated animate__fadeInRight"
+    );
+ }, 
+ offset
+ );
+ $(".flex3").waypoint(function(){
+    $(".flex3").addClass(
+     "animate__animated animate__fadeInUp"
+    );
+ }, 
+ offset
+ );
+
  })
