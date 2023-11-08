@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .btn {
     @apply py-2 px-4 items-center  bg-color-secondary text-white font-medium text-lg rounded-md hover:scale-x-110 hover:shadow-xl ease-in duration-200;
 }
@@ -90,3 +94,25 @@
         border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
     }
 }
+
+.first-paragraph, 
+.swiper,
+.card1, 
+.card2,
+.card3 {
+    opacity:0;
+}
+.first-paragraph.animate__animated, 
+.swiper.animate__animated, 
+.card1.animate__animated, 
+.card2.animate__animated,
+.card2.animate__animated {
+    opacity:1;
+}
+
+.card2{
+   animation-delay: .20s;
+}
+.card3{
+    animation-delay: .4s;
+ }

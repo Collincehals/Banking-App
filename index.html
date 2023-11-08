@@ -7,9 +7,12 @@
     <title>Banking Website</title>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
+
+   
 </head>
 <body class="bg-color-primary-light">
     <header class="top-0 right-0 left-0 z-50 sticky bg-color-primary-dark">
@@ -56,7 +59,7 @@
                 <div class="absolute bg-color-blob left-16 top-35 rounded-full  w-56 h-56 z-0 blur-2xl opacity-30 overflow-hidden"></div>
                 <div class="absolute bg-color-secondary bottom-10 right-20 rounded-full w-64 h-64 -z-0 blur-2xl opacity-30 overflow-hidden"></div>
                 <div class="flex flex-col gap-12 items-center justify-center text-color-white md:flex-row">
-                    <div class="mb-4 md:w-1/3">
+                    <div class="first-paragraph mb-4 md:w-1/3">
                         <h2 class="title">Awesome App for your Finances</h2>
                         <p class="leading-relaxed py-4 mb-3">LOOP is a Smart APP that offers you a DIGITAL Wallet you can use to manage all your money centrally.</p>
                         <a href="#pricing" class="btn">Free Trial</a>
@@ -86,7 +89,7 @@
                 <h3 class="text-lg text-center text-white py-4 font-semibold">Our Future</h3>
                 <h1 class="title mb-10">Easy to manage all you finances in one app</h2>
                 <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 lg:gap-8 sm:gap-6 items-center text-color-white ">
-                    <div class="bg-color-primary-light rounded-md p-10 border-2 border-color-blob text-center hover:bg-color-gray hover:scale-105 hover:border-color-secondary ease-in duration-200 cursor-pointer">
+                    <div class="card1 bg-color-primary-light rounded-md p-10 border-2 border-color-blob text-center hover:bg-color-gray hover:scale-105 hover:border-color-secondary ease-in duration-200 cursor-pointer">
                         <div class="rounded-md mb-3 py-4 px-6 bg-color-secondary inline-block">
                             <i class="fa-solid fa-calendar-days text-5xl text-white "></i>
                         </div>
@@ -95,7 +98,7 @@
                         <button class="btn">Free Trial</button></li> 
                     </div>
 
-                    <div class="bg-color-primary-light rounded-md p-10 border-2 border-color-blob text-center hover:scale-105 hover:bg-color-gray hover:border-color-secondary ease-in duration-200 cursor-pointer">
+                    <div class="card2 bg-color-primary-light rounded-md p-10 border-2 border-color-blob text-center hover:scale-105 hover:bg-color-gray hover:border-color-secondary ease-in duration-200 cursor-pointer">
                         <div class="rounded-md mb-3 py-4 px-6 bg-color-secondary inline-block">
                             <i class="fa-solid fa-chart-column text-5xl text-white "></i>
                         </div>
@@ -104,7 +107,7 @@
                         <button class="btn">Free Trial</button></li> 
                     </div>
 
-                    <div class="bg-color-primary-light rounded-md p-10 border-2 border-color-blob text-center hover:scale-105 hover:bg-color-gray hover:border-color-secondary ease-in duration-200 cursor-pointer">
+                    <div class="card3 bg-color-primary-light rounded-md p-10 border-2 border-color-blob text-center hover:scale-105 hover:bg-color-gray hover:border-color-secondary ease-in duration-200 cursor-pointer">
                         <div class="rounded-md mb-3 py-4 px-6 bg-color-secondary inline-block">
                             <i class="fa-solid fa-phone text-5xl text-white "></i>
                         </div>
@@ -520,94 +523,12 @@
     <button><i class="fa-solid fa-chevron-up text-xl text-color-primary-dark hover:text-white "></i></button>
 </div>
 
+ <!-- Animate JS & cdn js -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<!--Javascript codes here-->
+<script src="js/script.js"></script>
 
-    <!--Javascript codes here-->
-    <script>
-        let menubars= document.querySelector('#menu-bars');
-        let menu= document.querySelector('#menu');
-        let navlink = document.querySelectorAll('#navLink');
-
-        menubars.onclick = () =>{
-            menu.classList.toggle('hidden');
-            menubars.classList.toggle('fa-xmark');
-        }
-
-        window.onscroll = () => {
-            menu.classList.add('hidden');
-            menubars.classList.remove('fa-xmark');
-        }
-
-
-        navlink.forEach(link => {
-            link.addEventListener('click', () =>{
-                menu.classList.toggle('hidden');
-                menubars.classList.toggle('fa-xmark');
-            })
-        })
-
-       
-
-        const userPics = document.getElementsByClassName('user-pic');
-        const userTexts  = document.getElementsByClassName('user-text');
-
-        function ShowReview() {
-            for (userPic of userPics) {
-                userPic.classList.remove("active-pic");
-            }
-            for (userText of userTexts) {
-                userText.classList.remove("active-text");
-            }
-
-            let i = Array.from(userPics).indexOf(event.target);
-           
-            userPics[i].classList.add('active-pic');
-            userTexts[i].classList.add('active-text');
-        }
-
-
-        const Togglebtn = document.getElementById('Togglebtn');
-
-        const card_1_front  = document.querySelector('#card_1_front');
-        const card_1_back  = document.querySelector('#card_1_back');
-        const card_2_front  = document.querySelector('#card_2_front');
-        const card_2_back  = document.querySelector('#card_2_back');
-        const card_3_front  = document.querySelector('#card_3_front');
-        const card_3_back  = document.querySelector('#card_3_back');
-
-        Togglebtn.addEventListener('change', () => {
-            card_1_front.classList.toggle('-rotate-y-180');
-            card_1_back.classList.toggle('rotate-y-180');
-
-            card_2_front.classList.toggle('-rotate-y-180');
-            card_2_back.classList.toggle('rotate-y-180');
-
-            card_3_front.classList.toggle('-rotate-y-180');
-            card_3_back.classList.toggle('rotate-y-180')
-        });
-
-        const button = document.querySelector('.back-to-top');
-        window.onscroll= () => {
-            if (window.scrollY > 200) {
-                button.classList.remove('hidden');
-            } else {
-                button.classList.add('hidden');
-            }
-            };
-       
-            document.querySelector('.back-to-top').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-    </script>
-
-
-         <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "cards",
-      grabCursor: true,
-    });
-  </script>
 </body>
 </html>
