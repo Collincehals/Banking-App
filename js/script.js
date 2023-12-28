@@ -97,7 +97,7 @@ $(document).ready(function() {
  
  $(".swiper").waypoint(function(){
     $(".swiper").addClass(
-     "animate__animated animate__fadeInUp"
+     "animate__animated animate__zoomIn"
     );
  }, 
  offset
@@ -105,7 +105,7 @@ $(document).ready(function() {
 
  $(".card1").waypoint(function(){
     $(".card1").addClass(
-     "animate__animated animate__fadeInLeft"
+     "animate__animated animate__zoomIn"
     );
  }, 
  offset
@@ -121,7 +121,7 @@ $(document).ready(function() {
 
  $(".card3").waypoint(function(){
     $(".card3").addClass(
-     "animate__animated animate__fadeInRight"
+     "animate__animated animate__zoomIn"
     );
  }, 
  offset
@@ -129,7 +129,7 @@ $(document).ready(function() {
  
  $(".banner").waypoint(function(){
     $(".banner").addClass(
-     "animate__animated animate__bounceInDown"
+     "animate__animated animate__fadeInLeft"
     );
  }, 
  offset
@@ -137,7 +137,7 @@ $(document).ready(function() {
  
  $("#saving-title").waypoint(function(){
     $("#saving-title").addClass(
-     "animate__animated animate__fadeInRightBig"
+     "animate__animated animate__zoomIn"
     );
  }, 
  offset
@@ -169,7 +169,7 @@ $(document).ready(function() {
 
  $(".card6").waypoint(function(){
     $(".card6").addClass(
-     "animate__animated animate__fadeInRight"
+     "animate__animated animate__zoomIn"
     );
  }, 
  offset
@@ -177,7 +177,7 @@ $(document).ready(function() {
 
  $(".card7").waypoint(function(){
     $(".card7").addClass(
-     "animate__animated animate__fadeInDownBig"
+     "animate__animated animate__fadeInDown"
     );
  }, 
  offset
@@ -217,7 +217,7 @@ $(document).ready(function() {
 
  $(".card12").waypoint(function(){
     $(".card12").addClass(
-     "animate__animated animate__fadeInRight"
+     "animate__animated animate__zoomIn"
     );
  }, 
  offset
@@ -241,7 +241,7 @@ $(document).ready(function() {
 
  $("#flex1").waypoint(function(){
     $("#flex1").addClass(
-     "animate__animated animate__fadeInLeft"
+     "animate__animated animate__fadeInDown"
     );
  }, 
  offset
@@ -249,7 +249,7 @@ $(document).ready(function() {
 
  $("#flex2").waypoint(function(){
     $("#flex2").addClass(
-     "animate__animated animate__fadeInRight"
+     "animate__animated animate__zoomIn"
     );
  }, 
  offset
